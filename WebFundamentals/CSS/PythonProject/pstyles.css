@@ -1,0 +1,43 @@
+#wrapper{
+  border: 1px dotted black;
+}
+.header{
+  border: 1px dotted black;
+}
+.header img{
+  /*position: absolute;*/
+}
+.header p{
+  /*position: absolute; right: auto;*/
+}
+.header input{
+  margin: 5px;
+  border: 1px dotted yellow;
+  padding: 5px;
+}
+.header button{
+
+}
+.info{
+  border: 1px dotted black;
+}
+.h2{
+  border: 1px dotted yellow;
+  /*margin: 0;*/
+}
+.info h2{
+  display: inline-block;
+  margin-left: 35px;
+}
+.navlink{
+  text-align: center;
+  /*margin: 0;*/
+  /*padding: 0;*/
+  content: ">>";
+}
+.content{
+  border: 1px dotted black;
+}
+.footer{
+  border: 1px dotted black;
+}
