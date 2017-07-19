@@ -3,8 +3,8 @@ var numbersOnly = []
 
 for (var i = 0; i < Arr.length; i++) {
   console.log(Arr[i]);
-  if (typeof [i] === "number"){
-    numbersOnly.push(i);
+  if (typeof Arr[i] === "number"){
+    numbersOnly.push(Arr[i]);
   }
 }
 console.log(numbersOnly);
