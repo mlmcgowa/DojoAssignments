@@ -13,4 +13,4 @@ function range(start, end, skip){
     }
   }
 }
-console.log(range(2, 20, 2));
+console.log(range(5, 100, 5));
