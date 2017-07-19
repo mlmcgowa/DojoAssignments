@@ -12,12 +12,12 @@ function PlaySlots(numOfQuarters) {
     var win = Math.random();
     console.log(win);
 
-    if (win < .01) {
+    if (numOfQuarters > 0 && win < .01) {
       (Math.floor(Math.random()*50)+50);
-      console.log(Math.floor(Math.random()*50)+50);
+      console.log(numOfQuarters + Math.floor(Math.random()*50)+50);
     }
     if (numOfQuarters == 0){
       return 0;
     }
 }
-PlaySlots(50);
+PlaySlots(10);
