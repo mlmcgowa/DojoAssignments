@@ -8,16 +8,57 @@
 // quarters and won 90, so it should return 140).
 // Return 0 if all the quarters were wasted.
 
+// function PlaySlots(numOfQuarters) {
+//   while (numOfQuarters > 0) {
+//     var win = Math.random();
+//     console.log(win);
+//
+//     if (win < .01) {
+//       console.log(numOfQuarters + Math.floor(Math.random()*50)+50);
+//     }
+//     if (numOfQuarters == 0) {
+//       return 0;
+//     }
+//   }
+// }
+
+// function PlaySlots(numOfQuarters) {
+//   var win = Math.random();
+//   console.log(win);
+//
+//   for (numOfQuarters > 0; numOfQuarters--;) {
+//     if (win < .1) {
+//       (Math.floor(Math.random()*50)+50);
+//       console.log(numOfQuarters + (Math.floor(Math.random()*50)+50));
+//     }
+//     if (numOfQuarters == 0){
+//       return 0;
+//     }
+//   }
+//   return 0;
+// }
+// PlaySlots(50);
+
+
 function PlaySlots(numOfQuarters) {
+
+  while (numOfQuarters > 0) {
     var win = Math.random();
     console.log(win);
+    console.log(numOfQuarters--);
 
-    if (numOfQuarters > 0 && win < .01) {
-      (Math.floor(Math.random()*50)+50);
-      console.log(numOfQuarters + Math.floor(Math.random()*50)+50);
-    }
-    if (numOfQuarters == 0){
+    if (numOfQuarters === 0){
       return 0;
     }
+    // numOfQuarters = numOfQuarters--;
+    if (win < .01) {
+      (Math.floor(Math.random()*50)+50);
+      console.log(numOfQuarters + Math.floor(Math.random()*50)+50);
+      // if (win > .01) {
+      //   return 0;
+
+    }
+  }
 }
-PlaySlots(10);
+
+PlaySlots(50);
