@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Disappearing Ninja Assignment!</title>
+    <link rel="stylesheet" type="text/css" href="DNstyles.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('img').click(function() {
+          $(this).hide();
+        });
+        $('button').click(function() {
+          $('img').show();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <img src="ninja.png" alt="ninja">
+    <img src="ninja2.png" alt="ninja">
+    <img src="ninja3.png" alt="ninja">
+    <img src="ninja4.png" alt="ninja">
+    <img src="ninja5.png" alt="ninja">
+    <img src="ninja6.png" alt="ninja">
+    <img src="ninja7.png" alt="ninja">
+    <img src="ninja8.png" alt="ninja">
+    <button type="button" name="button">Click me to restore images!</button>
+  </body>
+</html>
