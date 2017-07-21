@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <title>jQuery Functions Assignment</title>
+    <link rel="stylesheet" type="text/css" href="jQFstyles.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#Click button').click(function() {
+              alert("You have used the click feature in jQuery");
+            });
+            $('#Hide').click(function() {
+              $('#HSimg').hide();
+            });
+            $('#Show').click(function() {
+              $('#HSimg').show();
+            });
+            $('#Toggle button').click(function() {
+              $('#Toggle p').toggle();
+            });
+            $('#Slide_Down img').hide();
+            $('#Slide_Down button').click(function() {
+              $('#Slide_Down img').slideDown('slow');
+            });
+            $('#Slide_Up button').click(function() {
+              $('#Slide_Up img').slideUp('slow');
+            });
+            $('#Slide_Toggle img').hide();
+            $('#Slide_Toggle button').click(function() {
+              $('#Slide_Toggle img').slideToggle('slow');
+            });
+            $('#Fade_In img').hide();
+            $('#Fade_In button').click(function() {
+              $('#Fade_In img').fadeIn('slow');
+            });
+            $('#Fade_Out button').click(function() {
+              $('#Fade_Out img').fadeOut('slow');
+            });
+            $('#Add_Class button').click(function() {
+              $('#Add_Class p').addClass('makeBlue');
+            });
+            $("#Before button").click(function() {
+				      $("#Before p").before("This is more text");
+			      });
+            $("#After button").click(function() {
+				      $("#After p").after("This is more text");
+			      });
+            $("#Append button").click(function() {
+				      $("#Append p").append("This is more text");
+			      });
+            $("#html button").click(function() {
+				      $("#html p").html("Different text");
+			      });
+            $("#attr button").click(function() {
+				      $("#attr p").attr('class', 'makeBlue');
+			      });
+            $("#val button").click(function() {
+				      $("#val input").val("This is different text");
+			      });
+            $("#Text button").click(function() {
+				      $("#Text p").text("This is different text");
+			      });
+            $("#Data").data()
+        });
+    </script>
+</head>
+<body>
+    <div id="Click" class="box">
+        <h1>Click</h1>
+        <button>Click Me!</button>
+        <p>Click the button to trigger an alert.</p>
+    </div>
+    <div id="Hide/Show" class="box">
+        <h1>Hide/Show</h1>
+        <button id="Hide">Hide</button>
+        <button id="Show">Show</button>
+        <p>Click the button to hide/show an image below that sums up how I feel since I've started this bootcamp!.</p>
+        <img id="HSimg" src="meme5.jpeg" alt="meme">
+    </div>
+    <div id="Toggle" class="box">
+        <h1>Toggle</h1>
+        <button>Toggle</button>
+        <p>Click the button to toggle text on and off.</p>
+    </div>
+    <div id="Slide_Down" class="box">
+        <h1>Slide Down</h1>
+        <button>Slide Down</button>
+        <img src="meme.jpeg" alt="meme" />
+    </div>
+    <div id="Slide_Up" class="box">
+        <h1>Slide Up</h1>
+        <button>Slide Up</button>
+        <img src="meme2.jpeg" alt="meme" />
+    </div>
+    <div id="Slide_Toggle" class="box">
+        <h1>Slide Toggle</h1>
+        <button>Slide Toggle</button>
+        <img src="meme3.png" alt="meme" />
+    </div>
+    <div id="Fade_In" class="box">
+        <h1>Fade In</h1>
+        <button>Fade In</button>
+        <img src="meme4.jpeg" alt="meme" />
+    </div>
+    <div id="Fade_Out" class="box">
+        <h1>Fade Out</h1>
+        <button>Fade Out</button>
+        <img src="./images/JQuery.png" alt="JQuery" />
+    </div>
+    <div id="Add_Class" class="box">
+        <h1>Add Class</h1>
+        <button>Add Class</button>
+        <p>Click the button to turn this into blue text.</p>
+    </div>
+    <div id="Before" class="box">
+        <h1>Before</h1>
+        <button>Before</button>
+        <p>Click the button to add text before this line.</p>
+    </div>
+    <div id="After" class="box">
+        <h1>After</h1>
+        <button>After</button>
+        <p>Click the button to add text after this line.</p>
+    </div>
+    <div id="Append" class="box">
+        <h1>Append</h1>
+        <button>Append</button>
+        <p>Click the button to add test before this line.</p>
+    </div>
+    <div id="html" class="box">
+        <h1>html</h1>
+        <button>html</button>
+        <p>Click the button to change the html of this line.</p>
+    </div>
+    <div id="attr" class="box">
+        <h1>attr</h1>
+        <button>attr</button>
+        <p>Click the button the change the class attribute to makeBlue</p>
+    </div>
+    <div id="val" class="box">
+        <h1>val</h1>
+        <button>val</button>
+        <input type="text" value="Click button to change text">
+    </div>
+    <div id="Text" class="box">
+        <h1>Text</h1>
+        <button>Text</button>
+        <p>Click the button to change the text of this line.</p>
+    </div>
+    <div id="Data" class="box">
+        <h1>Data</h1>
+        <button>Data</button>
+        <p>Go to the console to see what data i've stored.</p>
+    </div>
+</body>
+</html>
