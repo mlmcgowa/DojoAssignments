@@ -1,0 +1,22 @@
+.wrapper {
+  width: 970px;
+  height: 1000px;
+  margin: 100px auto;
+}
+
+table {
+  width: auto;
+  border: 1px solid black;
+  padding: 0px 0px 0px 0px;
+  margin: 0 auto;
+}
+
+th {
+  display: inline-block;
+  width: auto;
+  padding: 4px 48px 4px 5px;
+}
+
+td {
+  padding: 0px 0px 0px 4px;
+}

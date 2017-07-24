@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Users Assignment</title>
+  <link rel="stylesheet" href="ustyles.css">
+  <script src='https://code.jquery.com/jquery-3.2.1.slim.js'></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('form').submit(function(e){
+        e.preventDefault();
+        var first = $(this).find('#firstName').val();
+        var last = $(this).find('#lastName').val();
+        var email = $(this).find('#email').val();
+        var contact = $(this).find('#contact').val();
+
+        $('#fn').append('<th><td>' + first + '</td></th>')
+        $('#ln').append('<th><td>' + last + '</td></th>')
+        $('#em').append('<th><td>' + email + '</td></th>')
+        $('#con').append('<th><td>' + contact + '</td></th>');
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="wrapper">
+
+    <table>
+      <thead>
+        <tr>
+          <th>First Name: </th>
+            <td id="fn"></td>
+          <th>Last Name: </th>
+            <td id="ln"></td>
+          <th>Email: </th>
+            <td id="em"></td>
+          <th>Contact #: </th>
+            <td id="con"></td>
+        </tr>
+      </thead>
+    </table>
+
+    <h1>Add User</h1>
+
+    <form action="index.html" method="post">
+      <p>
+        <label>First name: </label>
+        <input id="firstName" type="text" name="first_name" value="First Name">
+      </p>
+      <p>
+        <label>Last name: </label>
+        <input id="lastName" type="text" name="last_name" value="Last Name">
+      </p>
+      <p>
+        <label>Email: </label>
+        <input id="email" type="text" name="email" value="Email">
+      </p>
+      <p>
+        <label>Contact # </label>
+        <input id="contact" type="text" name="contact_number" value="Contact Number">
+      </p>
+
+      <input id="submit" type="submit" name="submit" value="Add User">
+    </form>
+
+  </div>
+</body>
+</html>
