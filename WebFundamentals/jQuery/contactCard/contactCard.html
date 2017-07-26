@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Card</title>
+	<link rel="stylesheet" type="text/css" href="concardstyles.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var fname;
+				var lname;
+				var descript;
+				$('button').click(function(){
+					fname = $('#firstName').val();
+					lname = $('#lastName').val();
+					descript = $('#description').val();
+
+					$('#nameCards').append('<div class="nameCard" id="' + fname + '" description="' + descript + '"><h1>' + fname + ' ' + lname + '</h1><p>Click for description!</p></div>' );
+					return false
+				});
+				$(document).on('click', '.nameCard', function(){
+					$(this).html($(this).attr('description'))
+				});
+				// $(document).on('click', '.nameCard', function(){
+				// 	$(this).html($(this).attr('h1 + p'))
+			});
+		</script>
+</head>
+<body>
+<div id="wrapper">
+	<div id="form">
+		<form id="form1" action="process.php" method='post'>
+			<div>First Name: <input type='text' name='first_name' id="firstName" placeholder='First Name'></div>
+			<div>Last Name: <input type='text' name='last_name' id="lastName" placeholder='Last Name'></div>
+			<div>Descripton: <textarea id="description"></textarea></div>
+		</form>
+		<button id="user">Add User</button>
+	</div>
+
+	<div id="nameCards">
+	</div>
+</div>
+</body>
+</html>

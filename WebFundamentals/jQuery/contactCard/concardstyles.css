@@ -1,0 +1,54 @@
+* {
+ 	vertical-align: baseline;
+ 	font-weight: inherit;
+ 	font-family: Arial;
+ 	font-style: inherit;
+ 	outline: 0;
+ 	padding: 0;
+ 	margin: 0;
+ }
+
+ #wrapper {
+ 	width: 1000px;
+ }
+
+#form {
+ 	width: 300px;
+ 	display:inline-block;
+ 	margin:10px;
+ 	padding: 10px;
+}
+
+ #nameCards {
+	width: 300px;
+  height: auto;
+ 	display:inline-block;
+ 	margin:10px;
+ 	padding:10px;
+ 	vertical-align:top;
+ 	text-align:right;
+  border: 1px solid black;
+}
+ /*#form1 div {
+ +	display:inline-block;
+ +}*/
+
+ #form1 input {
+ 	display:inline-block;
+ }
+
+ #form1 textarea {
+ 	width:250px;
+	height:80px;
+ }
+
+ .nameCard{
+ 	text-align: center;
+ 	border: 1px solid black;
+ 	height: 150px;
+ 	margin-bottom:15px;
+ }
+
+ .nameCard h1{
+ 	margin-bottom:15px;
+ }
