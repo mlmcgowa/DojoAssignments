@@ -1,0 +1,14 @@
+.pokedex
+{
+	height: 400px;
+	width: 300px;
+	border: 5px solid red;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 50px;
+}
+
+.pokemon
+{
+	display:inherit;
+}
