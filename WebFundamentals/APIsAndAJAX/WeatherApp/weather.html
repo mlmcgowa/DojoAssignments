@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Weather Forcast App</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('form').submit(function(){
+          $.get('http://api.openweathermap.org/data/2.5/weather?q=' + $('#city').val() + '&&appid=482c5187ff488789715b7e6b397a8c50', function(res) {
+              console.log(res);
+              var temp= (1.8 * (res.main.temp - 273) + 32);
+              $('.weather').html('<h1>' + res.name + '</h1><h2>Temperature: ' + Math.trunc(temp) + '</h2>');
+              console.log(res.main.temp);
+          }, 'json');
+          return false;
+        })
+      });
+    </script>
+  </head>
+  <body>
+    <form class="weather_get" action="index.html" method="post">
+      <h3>City:</h3>
+      <input type="text" id="city" placeholder="City">
+      <input type="submit" name="Get the Temperature" value="Get the Temperature">
+    </form>
+    <div class="weather">
+
+    </div>
+  </body>
+</html>
