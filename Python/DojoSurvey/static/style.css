@@ -1,0 +1,18 @@
+form {
+  display: inline-block;
+}
+
+.this_form {
+  width: 300px;
+  length: 300px;
+  text-align: left !important;
+  display: inline-block;
+}
+
+body {
+  text-align: center;
+}
+
+.f1 button {
+  text-align: left !important;
+}
